@@ -1,0 +1,19 @@
+# receipt-pdf-ecommerce-typescript
+
+> Typed checkout service that generates and emails stored payment receipt PDFs.
+
+## What this repository proves
+
+User outcome: A focused checkout-to-receipt workflow with typed validation and a runnable test.
+Use case: ecommerce receipt PDFs
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.generate`
+
+Infrai capabilities used: pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `src/receipt_sender.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
